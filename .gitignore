@@ -1,0 +1,4 @@
+.omc/
+output/
+__pycache__/
+*.pyc

@@ -52,7 +52,17 @@ notebooklm auth check --test
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)가 설치되어 있어야 합니다.
 
 ```bash
-npm install -g @anthropic-ai/claude-code
+# macOS / Linux
+curl -fsSL https://claude.ai/install.sh | bash
+
+# macOS (Homebrew)
+brew install --cask claude-code
+
+# Windows (PowerShell)
+irm https://claude.ai/install.ps1 | iex
+
+# Windows (WinGet)
+winget install Anthropic.ClaudeCode
 ```
 
 이 프로젝트 폴더에서 `claude`를 실행하면, `.claude/skills/` 아래의 스킬과 `CLAUDE.md`의 프로젝트 설정이 자동으로 로드됩니다.
